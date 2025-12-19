@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kent - 图片库</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<div class="logo">KENT</div>
+			<nav class="site-nav">
+				<a href="index.html">首页</a>
+				<a href="history.html">乐队历史</a>
+				<a href="music-style.html">音乐风格</a>
+				<a href="albums.html">乐队专辑</a>
+				<a href="gallery.html" class="active">乐队图片</a>
+			</nav>
+			<button class="nav-toggle" aria-label="切换导航">☰</button>
+		</div>
+	</header>
+
+	<main class="container">
+		<section class="content card">
+			<h1>乐队图片</h1>
+			<div class="gallery-grid">
+				<img src="images/1.jpg" alt="photo1">
+				<img src="images/3.jpg" alt="photo3">
+				<img src="images/4.jpeg" alt="photo4">
+				<img src="images/5.webp" alt="photo5">
+				<img src="images/6.webp" alt="photo6">
+				<img src="images/kent-big.jpg" alt="kent">
+				<img src="images/Joakim Berg.jpg" alt="Joakim Berg">
+				<img src="images/Markus Mustonen.jpg" alt="Markus Mustonen">
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container footer-inner">© Kent Fan Site</div>
+	</footer>
+
+	<script>
+		const btn = document.querySelector('.nav-toggle');
+		const nav = document.querySelector('.site-nav');
+		btn.addEventListener('click', ()=> nav.classList.toggle('open'));
+	</script>
+	<script src="js/snow.js" defer></script>
+</body>
+</html>
+

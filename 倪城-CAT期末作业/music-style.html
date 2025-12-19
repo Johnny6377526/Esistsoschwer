@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kent - 音乐风格</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<div class="logo">KENT</div>
+			<nav class="site-nav">
+				<a href="index.html">首页</a>
+				<a href="history.html">乐队历史</a>
+				<a href="music-style.html" class="active">音乐风格</a>
+				<a href="albums.html">乐队专辑</a>
+				<a href="gallery.html">乐队图片</a>
+			</nav>
+			<button class="nav-toggle" aria-label="切换导航">☰</button>
+		</div>
+	</header>
+
+	<main class="container">
+		<section class="content card music-style">
+			<h1>音乐风格 <span class="xmas-deco">❄️</span></h1>
+			<p class="lead">Kent 的声音既有北欧摇滚的冷峻，也逐步融入了合成器与流行的温度。下面的两部分，简明呈现其从吉他驱动到电子化的演变。</p>
+
+			<div class="ms-grid">
+				<div class="ms-card">
+					<h3>早期另类摇滚影响（1990年代） <span class="mini">羊毛衫场景 · 低保真冲击</span></h3>
+					<p>肯特在1990年代奠基时期的音乐风格深植于另类摇滚，特征为突出的失真吉他音色和厚重低音，辅以瑞典语的内省歌词。这一阶段作品短小有力（平均 3–4 分钟），通过急促的连复段和动态变化，捕捉青春的疏离与身份挣扎。</p>
+					<p>从首张《Kent》（1995）到《Verkligen》（1996），制作上由低保真向更精炼的摇滚音色演进：在保持真实感的同时，获得了更清晰的编曲与现场质感。</p>
+				</div>
+
+				<div class="ms-card">
+					<h3>向电子与流行元素的演变（2000s–2010s） <span class="mini">合成器 · 观念流行</span></h3>
+					<p>进入 2000 年代中期，Kent 开始将电子元素融入作品：在《Vapen & ammunition》（2002）中加入层次丰富的合成器；到《Tillbaka till samtiden》（2007）则更显电子舞曲质感，最终在《Röd》（2009）与《Tigerdrottningen》（2014）中达到高度的电子化与编曲复杂性。</p>
+					<p>这一时期乐队保留主题的一致性（疏离、现代性、联结），却通过数字制作、分层合成器与弦乐/铜管的加入，把个人情感放大为更具有史诗感与当代批判性的表述。</p>
+				</div>
+			</div>
+
+			<div class="ms-extra">
+				<h4>代表曲目</h4>
+				<ul>
+					<li>早期：Palern / Urd</li>
+					<li>转型期：Elefanter / Taxmannen</li>
+					<li>成熟期：Innan himlen faller ner / Tigerdrottningen</li>
+				</ul>
+			</div>
+
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container footer-inner">© Kent Fan Site</div>
+	</footer>
+
+	<script>
+		const btn = document.querySelector('.nav-toggle');
+		const nav = document.querySelector('.site-nav');
+		btn.addEventListener('click', ()=> nav.classList.toggle('open'));
+	</script>
+	<script src="js/snow.js" defer></script>
+</body>
+</html>
+
